@@ -1,7 +1,7 @@
 ﻿Console.Write("Введите имя пользователя: ");
-string username = Console.ReadLine();
+string username = Console.ReadLine() ?? "0";
 
-if (username.ToLower() = "маша")  // ToLower позволяет не задумыватся какой регистр применяется при записи username
+if (username.ToLower() == "маша")  // ToLower позволяет не задумыватся какой регистр применяется при записи username
 {
     Console.WriteLine("Ура, это же МАША");
 }
